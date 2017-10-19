@@ -1,0 +1,10 @@
+#works with both symbols and numbers 
+
+rev = -> (word) {word.instance_of?(String) ? word.reverse : word}
+stuff = ["candy", :pepper, "wall", :ball, "wacky"]
+reversed_strings = stuff.map(&rev)
+print reversed_strings
+
+more_stuff = ["Peter", :yellow, "pumpkins", :corey, :peter, "brittle", 64]
+more_stuff.map!(&rev)
+print more_stuff
