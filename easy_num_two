@@ -1,0 +1,4 @@
+lname = -> (name) {"Paul #{name}" }
+last_names = ["D", "Krugman"]
+paul = last_names.map(&lname)
+puts paul 
